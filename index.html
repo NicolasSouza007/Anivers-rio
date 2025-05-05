@@ -19,11 +19,24 @@
       color: #d6336c;
     }
 
+    .instruction {
+      font-size: 1.5em;
+      margin-top: 40px;
+      color: #6c757d;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
     .gift-box {
       width: 150px;
       height: 150px;
       background: #d6336c;
-      margin: 100px auto;
+      margin: 30px auto;
       border-radius: 20px;
       position: relative;
       cursor: pointer;
@@ -70,6 +83,7 @@
 </head>
 <body>
   <h1>Feliz Aniversário!</h1>
+  <div class="instruction">Clique aqui para abrir o presente 🎁</div>
   <div class="gift-box" onclick="showSurprise()"></div>
   <div class="message" id="message">🎉 Parabéns pelos 40 anos! 🎉</div>
 
